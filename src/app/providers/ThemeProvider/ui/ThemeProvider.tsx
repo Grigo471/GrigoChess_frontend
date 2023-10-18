@@ -7,7 +7,7 @@ interface ThemeProviderProps {
     initialTheme?: Theme;
 }
 
-const ThemeProvider = (props: PropsWithChildren<ThemeProviderProps>) => {
+export const ThemeProvider = (props: PropsWithChildren<ThemeProviderProps>) => {
     const {
         initialTheme,
         children
@@ -26,5 +26,3 @@ const ThemeProvider = (props: PropsWithChildren<ThemeProviderProps>) => {
         </ThemeContext.Provider>
     )
 }
-
-export default ThemeProvider;
